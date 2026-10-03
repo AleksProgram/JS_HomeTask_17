@@ -89,7 +89,6 @@ buttonList.addEventListener("click", (e) => {
 });
 
 fridgeLitValue.addEventListener("click", (e) => {
-  //#1 пЕРВЫЙ СПОСОБ: добавление/удаление галочки около названия продукта
   if (e.target.tagName === "LI") {
     const cleanName = e.target.textContent.replace("✓", "").trim();
     const product = products.find(
